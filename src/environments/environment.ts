@@ -10,7 +10,7 @@ export const environment = {
   // cognito_identity_pool_id: "ap-southeast-1:e519d92f-0ff3-4f57-bb81-b9ef1b2e14b7",
   cognito_user_pool_web_client_id: "13j334c38ovp8nmrvof22mpo1c",
   commodities_api_base_url: "https://zwa12ypk69.execute-api.eu-west-2.amazonaws.com/staging/api",
-  self_host: "http://localhost:4200"
+  self_host: "http://localhost:4201"
 };
 
 /*
