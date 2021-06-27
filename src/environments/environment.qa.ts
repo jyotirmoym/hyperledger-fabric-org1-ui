@@ -4,10 +4,8 @@
 
 export const environment = {
   production: false,
-  // cognito_ipool_id: "ap-south-1:71f1e954-1000-4df7-94aa-9c1110cb2981",
   aws_region: "ap-southeast-1",
   cognito_upool_id: "ap-southeast-1_EtzeEuvzM",
-  // cognito_identity_pool_id: "ap-southeast-1:bb2555a6-72eb-4349-b340-29da860379e2",
   cognito_user_pool_web_wlient_id: "5u17pkmj2b94ntndl171ku1dp7",
   commodities_api_base_url: "https://api.test.epraman.com/api",
   cognito_hosted_ui_domain: "auth.test.epraman.com",
