@@ -1,0 +1,35 @@
+<div class="container">
+  <div id="submit-row" class="row justify-content-center align-items-center">
+    <div id="submit-column">
+      <h3 class="text-center text-info">Submit Commodity</h3>
+      <form style="margin-left: 300px;" id="submit-form" action="" method="post">
+        <div class="form-row align-items-center">
+          <div class="col-5">
+            <div class="input-group input-group-sm mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-sm">Type</span>
+              </div>
+              <input id="type" type="text" name="type" class="form-control" [(ngModel)]="commodity.name"/>
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-sm">Count</span>
+              </div>
+              <input id="count" type="text" name="count" class="form-control" [(ngModel)]="commodity.count"/>
+            </div>
+
+          </div>
+
+          <div class="col-12">
+
+            <button [disabled]="isProcessing" type="submit" name="submit" class="btn btn-info btn-md" value="submit"
+              (click)="submit()">
+              <span *ngIf="isProcessing" class="spinner-border spinner-border-sm" role="status"
+                aria-hidden="true"></span>
+              Submit
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<app-toasts aria-live="polite" aria-atomic="true"></app-toasts>
